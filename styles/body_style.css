@@ -199,8 +199,43 @@ p {
 }
 
 
-
-
 /*-------------------------------------------------------------------------------*/
 
 /*---------- ABOUT PAGE -------------*/
+
+#about {
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+#about-header {
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    background-color: #59ABE3;
+    color: white;
+    font-weight: bold;
+}
+
+#logo-sm img {
+    height: 170px;
+
+}
+
+#about-header .r-nav { /*right navigation*/
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
