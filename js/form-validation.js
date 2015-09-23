@@ -61,7 +61,7 @@ function hideAllErrors() {
  document.getElementById("emailError").style.display = "none";
  document.getElementById("messageError").style.display = "none";
 }
- 
+
 function checkEmail(inputvalue) {
  var pattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
  return pattern.test(inputvalue);
