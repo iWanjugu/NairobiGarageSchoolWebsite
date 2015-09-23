@@ -182,3 +182,25 @@ html, body {
     height: 100%;
 
 }
+
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#date {
+
+}
+
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+/*---------- ABOUT PAGE -------------*/
