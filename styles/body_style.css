@@ -203,6 +203,7 @@ p {
 
 /*---------- ABOUT PAGE -------------*/
 
+/****** Header *******/
 #about {
     height: 1000px;
     width: 100%;
@@ -224,16 +225,54 @@ p {
     height: 170px;
 
 }
-
 #about-header .r-nav { /*right navigation*/
     height: 100%;
 }
 
+/****** Row 1 *******/
+#about-row1 {
+    height: 800px;
+    margin-top: 50px;
+}
+
+#about-row1 .r-nav { /*right navigation*/
+    height: 800px;
+    width: 400px;
+    background-color: antiquewhite;
+    margin-left: 20px;
+    padding-right: 110px;
+}
 
 
+#right-nav {
+    width: 100%
+}
 
+.nav li{
+    list-style: none;
+    width: 100%;
+}
 
+#right-nav .nav li a {
 
+    display: block;
+    border-bottom: 1px solid #141414 ; /*Underlines box*/
+   -webkit-transition: 0.2s;
+    trasition: 0.2s
+}
+
+#right-nav .nav li a:hover {
+    font-size: 1.35em;
+    border-style: solid;
+    border-color: dimgray;
+    border-width: thin;
+
+}
+
+ul#nav li a.selected {
+    background-color: #34495E;
+    color: #fff;
+}
 
 
 
