@@ -70,6 +70,63 @@ html, body {
     display: inline-block;
 }
 
+.opac {
+    -webkit-filter: opacity(.);
+    filter: opacity(.7);*/
+}
+
+#top-header {
+    color: black;
+    background-color: white;
+    height: 240px;
+    align-content: center;
+}
+
+#logo {
+    position: relative;
+    height: 240px;
+}
+
+#logo img {
+    max-width:100%;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    display: inline-block;
+}
+
+#navigation {
+    height: 240px;
+
+}
+.nav {
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 50%;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav li a {
+    font-size: 1.35em;
+}
+
+.nav li a:hover {
+    font-size: 1.35em;
+    border-style: solid;
+    border-color: dimgray;
+    border-width: thin;
+}
+
+.nav li a.selected {
+    font-size: 1.35em;
+    border-style: solid;
+    border-color: dimgray;
+    border-width: thin;
+}
 
 
 /**** ALIGNING CENTER ****/
