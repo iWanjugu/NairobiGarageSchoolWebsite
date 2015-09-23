@@ -1,17 +1,17 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-//Using DOM to extract contact form input 
+//Using DOM to extract contact form input
 //Calling a function we created called checkForm()
 function checkForm() {
  name = document.getElementById("name").value;
  email = document.getElementById("email").value;
  website =document.getElementById("website").value;
   message=document.getElementById("message").value;
- 
+
  //using 'if-else' statement to check for conditions...
  if (name == "")
  {
@@ -46,7 +46,7 @@ function checkForm() {
  document.getElementById("message").focus();
  return false;
  }
- 
+
  //fucntion that checks for invalid email addresses and returns an error message
  if (!checkEmail(email))
  {
@@ -55,7 +55,7 @@ function checkForm() {
  }
  return true;
 }
- 
+
 function hideAllErrors() {
  document.getElementById("nameError").style.display = "none";
  document.getElementById("emailError").style.display = "none";
