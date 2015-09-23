@@ -100,87 +100,80 @@ html, body {
     height: 240px;
 
 }
-.nav {
+#navigation .nav {
     margin-top: 20%;
     margin-left: 35%;
     width: 50%;
 }
 
-.nav li {
+#navigation .nav li {
     display: inline-block;
     margin: 10px;
 }
 
-.nav li a {
+#navigation .nav li a {
     font-size: 1.35em;
 }
 
-.nav li a:hover {
-    font-size: 1.35em;
-    border-style: solid;
-    border-color: dimgray;
-    border-width: thin;
-}
-
-.nav li a.selected {
+#navigation .nav li a:hover {
     font-size: 1.35em;
     border-style: solid;
     border-color: dimgray;
     border-width: thin;
 }
 
-
-/**** ALIGNING CENTER ****/
-.parent {
-    position: relative;
+#navigation .nav li a.selected {
+    font-size: 1.35em;
+    border-style: solid;
+    border-color: dimgray;
+    border-width: thin;
 }
-
-.centered {
-    /*to fit in div*/
-    max-width:100%;
-
-    /*aligning center*/
-    position: absolute; /*parent div should be relatively positioned*/
-    top: 50%;
-    left: 50%;
-/*    transform: translate(-50%, -50%);
-    margin-right: -50%;*/
-    display: inline-block;
-
-}
-
 
 /*<!---- Main body section ---->*/
 
 #main-body {
-    height: 80%;
-
+    height: 75%;
 }
 
 #top-row {
-    margin-top: 20px;
-    height: 45%;
+    margin-top: 10px;
+    height: 60%;
     width: 100%;
     display: inline-block;
 }
 
 #bottom-row {
-    height: 45%;
+    height: 40%;
+    width: 100%;
+    display: inline-block;
+}
 
+#bottom-row h1, #bottom-row h2, #bottom-row h3 {
+    color: coral;
 }
 
 #left, #right {
-    -webkit-filter: opacity(0);
-    filter: opacity(.0);
+    -webkit-filter: opacity(.5);
+    filter: opacity(.1);
+    background-color: white;
     height: 100%;
 }
 
 #mid1, #mid2, #mid3, #mid4, #mid5  {
-    -webkit-filter: opacity(.7);
-    filter: opacity(.7);
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
     background-color: white;
     height: 100%;
+}
 
+#mid2 img {
+    margin-top: 14px;
+    height: 420px;
+}
+
+#mid4 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -207,7 +200,6 @@ p {
 #about {
     height: 1000px;
     width: 100%;
-    text-align: center;
     background-color: white;
 }
 
@@ -230,6 +222,7 @@ p {
 }
 
 /****** Row 1 *******/
+/*<!--- nav bar to the left--->*/
 #about-row1 {
     height: 800px;
     margin-top: 50px;
@@ -248,7 +241,7 @@ p {
     width: 100%
 }
 
-.nav li{
+#right-nav .nav li{
     list-style: none;
     width: 100%;
 }
@@ -275,6 +268,14 @@ ul#nav li a.selected {
 }
 
 
+/*<!--- Content--->*/
+.content p {
+    font-size: 1.1em;
+}
+
+#welcome, #jobs {
+    width: 80%;
+    margin-left: 10%;
 
 
-
+}
