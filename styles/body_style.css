@@ -166,6 +166,11 @@ html, body {
     height: 100%;
 }
 
+#mid2 {
+    text-align: center;
+
+}
+
 #mid2 img {
     margin-top: 14px;
     height: 420px;
@@ -226,6 +231,9 @@ p {
 #about-row1 {
     height: 800px;
     margin-top: 50px;
+}
+#about-row1 h1 {
+    color: coral;
 }
 
 #about-row1 .r-nav { /*right navigation*/

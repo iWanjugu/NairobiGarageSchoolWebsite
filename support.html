@@ -41,45 +41,85 @@
 <!---- Row1 ---->
         <div id="about-row1" class="row">
 
-            <!--- nav bar to the right--->
+            <!--- nav bar to the left--->
             <div class="col-md-3 r-nav">
-
 
                 <div id="right-nav" class="col-md-6">
                     <ul class="nav">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="support.html">About</a></li>
+						<li>
+                            <a href="support.html">About</a>
+                            <br><li><button class="toggleButton" data-target="welcome">Welcome</button></li> <br>
+                            <li><button class="toggleButton" data-target="jobs">Job Opportunities</button></li> <br>
+
+                        </li>
 						<li><a href="services.html">Services</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
                 </div>
 
+            </div>
+
+            <!--- content--->
+            <div id="content" class="col-md-9">
 
 
 
+                <div id="welcome" class="toggleDiv">
+                    <h1> Welcome! </h1>
+                    <p>
 
+We are a busy primary school, located along Ngong Road, Nairobi Kenya.
+
+Nairobi Garage School is a special and happy place, where children are given the very best opportunities to learn for life, to grow together and to achieve their full potential. <br><br>
+
+We aim for excellence in achievement and personal development by having a stimulating curriculum, which closely matches the needs of our children and encourages them to be confident, motivated and enthusiastic learners.   We believe that learning should be fun, that children should have a childhood enriched by the highest standard of education and that their school days should provide happy memories to last a lifetime. <br><br>
+
+The school, which dates from 1997, is situated on a five-acre site, which includes woodland areas, ponds, a school field, garden and play areas.  Outdoor learning is a key part of our work – read about Let's GLOW! to find out more. <br><br>
+
+We hope that this website captures the ethos of our school.   You are also very welcome to visit us, which is the best way to find out more, to see the school in action and to let us answer any questions you may have.<br><br>
+
+We look forward to meeting you.<br><br><br>
+
+Nelson Kimaiga • Head Teacher
+
+                </p>
+                </div>
+
+            <div id="jobs" class="toggleDiv" style="display:none">
+                <h1> Job Opportunities </h1>
+                <h3>Relief Midday Supervisors </h3>
+                <p>
+Are you looking for something to fill a spare hour in the middle of the day?  If so, have you thought of helping at lunchtime in a school? <br><br>
+We are looking for people who enjoy working with children to act as Relief Midday Supervisors to provide cover either when one of our regular staff members is absent, or when we just need an extra pair of hands!<br>
+We look forward to hearing from you if you think you might be interested.  Please contact Mrs Cooke in the school office for further details.
+                </p>
 
             </div>
-            <div class="col-md-9"></div>
 
 
         <!---- Row2 ---->
         <!---- Row3 ---->
 
-
-
-
-
-
-
-
-
-                   <!-- <div><h3> tagline </h3></div>-->
-                </div>
-
         </div>
     </div>
 </div>
 
+<!----------------------------------------------------------------------------->
+    <!----scripts------>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script>
+    $(function(){
+
+   $('.toggleButton').click(function(){
+
+         var target = $('#' + $(this).attr('data-target'));
+         $('.toggleDiv').not(target).hide();
+         target.show();
+   });
+});
+
+    </script>
 
 </body>
+
