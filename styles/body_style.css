@@ -1,0 +1,65 @@
+/***FONTS*****/
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Sigmar+One|Lobster|Patua+One|Architects+Daughter|Kaushan+Script|Fredoka+One|Rock+Salt|Shadows+Into+Light+Two|Permanent+Marker|Handlee|Great+Vibes|Just+Another+Hand|Niconne|Limelight|Damion|Calligraffitti|Audiowide|Bad+Script);
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,400italic,600,600italic);
+/* font-family: 'Josefin Sans', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+/*font-family: 'Quattrocento', serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Righteous);
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Righteous', cursive; */
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+/*font-family: 'Slabo 27px', serif;*/
+/******************************************************************/
+
+/*General Formatting*/
+html, body {
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    color: #000;
+    box-sizing:border-box;
+    background-color: black;
+}
+
+#wrapper1, #wrapper2, wrapper5 {
+    height: 100%;
+    width: 100%;
+}
+
+/* Inserting Background Image */
+#bgimage {
+    height: 1000px;
+    width: 100%;
+    background-image: url("../assets/assets/h_img.jpg");
+    text-align: center;
+    color: white;
+}
+
+/**** ALIGNING CENTER ****/
+.parent {
+    position: relative;
+}
+
+.centered {
+    /*to fit in div*/
+    max-width:100%;
+    max-height:100%;
+
+    /*aligning center*/
+    position: absolute; /*parent div should be relatively positioned*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    display: inline-block;
+
+}
+
+
