@@ -157,13 +157,25 @@ html, body {
 
 }
 
+#top-row {
+    margin-top: 20px;
+    height: 45%;
+    width: 100%;
+    display: inline-block;
+}
+
+#bottom-row {
+    height: 45%;
+
+}
+
 #left, #right {
     -webkit-filter: opacity(0);
     filter: opacity(.0);
     height: 100%;
 }
 
-#mid {
+#mid1, #mid2, #mid3, #mid4, #mid5  {
     -webkit-filter: opacity(.7);
     filter: opacity(.7);
     background-color: white;
