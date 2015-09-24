@@ -45,41 +45,12 @@ html, body {
     text-align: center;
 }
 
-.opac {
-    -webkit-filter: opacity(1);
-    filter: opacity(1);*/
-}
-
 #top-header {
-    color: black;
-    background-color: none;
-    height: 240px;
-    align-content: center;
-}
-
-#logo {
-    position: relative;
-    height: 240px;
-}
-
-#logo img {
-    max-width:100%;
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    display: inline-block;
-}
-
-.opac {
-    background-color: aliceblue;
-    -webkit-filter: opacity(.0);
-    filter: opacity(.7);
-}
-
-#top-header {
+    position: inherit;
     color: black;
     background-color: white;
     height: 240px;
+    width: 100%;
     align-content: center;
 }
 
@@ -215,13 +186,14 @@ html, body {
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block
+	display: block;
 }
 /******************************************/
 
 /*<!---- Main body section ---->*/
 
 #main-body {
+    margin-top: 240px;
     height: 75%;
 }
 
@@ -327,52 +299,84 @@ p {
 
 #about-row1 .r-nav { /*right navigation*/
     height: 800px;
-    width: 400px;
+    width: 300px;
     background-color: antiquewhite;
-    margin-left: 20px;
-    padding-right: 110px;
+    padding-right: 10px;
 }
 
 
 #right-nav {
-    width: 100%
-}
-
-#right-nav .nav li{
-    list-style: none;
+    margin-top: 50px;
     width: 100%;
+    height: 500px;
+
 }
 
-#right-nav .nav li a {
+#right-nav ul {
+    position:relative;
+    width: 100px;
+	float:left;
+	margin:0;
+	padding:0;
+    list-style: none;
+}
 
+#right-nav ul li a {
     display: block;
-    border-bottom: 1px solid #141414 ; /*Underlines box*/
-   -webkit-transition: 0.2s;
-    trasition: 0.2s
+    color: dimgray;
+    font-size: 1.2em;
+    line-height: 250%;
+    border-bottom: 1px solid #141414;
 }
 
-#right-nav .nav li a:hover {
-    font-size: 1.35em;
-    border-style: solid;
-    border-color: dimgray;
+#right-nav ul li a:hover {
+    font-size: 1.2em;
+    border-bottom: 2px solid #59ABE3 ; /*Underlines box*/
+    background-color: #e0e0e0;
     border-width: thin;
+    text-decoration: none;
+}
+
+#right-nav ul li a.selected {
+    font-size: 1.2em;
+    border-bottom: 1px solid #59ABE3 ; /*Underlines box*/
+    background-color: #e0e0e0;
+    border-width: thin;
+    text-decoration: none;
+}
+
+#right-nav ul ul {
+    list-style: none;
+    width: 150px;
+    left: 50%;
+    padding-left: 0;
+	top: 100%;
 
 }
 
-ul#nav li a.selected {
-    background-color: #34495E;
-    color: #fff;
+#right-nav ul ul a {
+    line-height: 240%;
+
+
 }
-
-
 /*<!--- Content--->*/
-.content p {
+#content {
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+#content h1 {
+   color: coral;
+    margin-top: 50px;
+}
+
+#content p {
     font-size: 1.1em;
 }
 
 #welcome, #jobs {
     width: 80%;
     margin-left: 10%;
-
-
 }
