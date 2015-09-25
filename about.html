@@ -18,14 +18,15 @@
 <body>
 <!------- ABOUT PAGE ------->
 <!------------------------------------------------------------->
-    <div id="wrapper" class="container">
+<div id="outer-wrapper" class="container">
+    <div class="row upper">
 
-        <!---- Header section ---->
+    <!---- Header section ---->
         <div id="top-header" class="row">
                 <!------------------------------>
                 <!--- logo to the left--->
                 <div id="logo" class="col-md-6">
-                    <img class="img-responsive  centered" src="images/nrb_logo.jpg" alt="logo">
+                    <img class="img-responsive" src="images/nrb_logo.jpg" alt="logo">
                    <!-- <div><h3> tagline </h3></div>-->
                 </div>
                 <!--- End of logo --->
@@ -45,16 +46,14 @@
                 </div>
         </div>
         <!--- End of Header ---->
+    </div>
 <!---------------------------------------------------------->
-<!-- PAGE 2: ABOUT ---->
+<div class="row lower">
+    <div id="inner-wrapper" class="container">
+<!-- CONTENT ---->
 
 <!---- Row1 ---->
-    <div id="about-row1" class="row" style="display:none">
-
-        <!-------------------------->
-
-        <div class="col-md-2"></div> <!--- Empty side div -->
-
+    <div id="about-row1" class="row">
         <!-------------------------->
         <!--- nav bar to the left--->
         <div class="col-md-3 r-nav">
@@ -75,7 +74,7 @@
         </div>
         <!----------------------------------------->
         <!--- content--->
-        <div id="content" class="col-md-5">
+        <div id="about-content" class="col-md-7">
 
             <!--- Welcome Tab ---->
 
@@ -87,8 +86,6 @@
                     We are a busy primary school, located along Ngong Road, Nairobi Kenya.
 
                     Nairobi Garage School is a special and happy place, where children are given the very best opportunities to learn for life, to grow together and to achieve their full potential. <br><br>
-
-                    We aim for excellence in achievement and personal development by having a stimulating curriculum, which closely matches the needs of our children and encourages them to be confident, motivated and enthusiastic learners.   We believe that learning should be fun, that children should have a childhood enriched by the highest standard of education and that their school days should provide happy memories to last a lifetime. <br><br>
 
                     The school, which dates from 1997, is situated on a five-acre site, which includes woodland areas, ponds, a school field, garden and play areas.  Outdoor learning is a key part of our work – read about Let's GLOW! to find out more. <br><br>
 
@@ -105,7 +102,7 @@
         <div id="values" class="toggleDiv" style="display:none">
             <h1> Visions and Values </h1>
             <p> Our vision and values are at the core of everything we do. They underpin our teaching and learning, and provide an environment which prepares our pupils as confident, happy citizens.</p>
-            <p>After many years in the teaching profession, I have come to believe that there is a very simple, yet highly effective formula to providing our pupils with an excellent education.  Our philosophy is simple: children need a happy school atmosphere, small class sizes and to have high expectations of themselves.</p>
+            <p>After many years in the teaching profession, we have come to believe that there is a very simple, yet highly effective formula to providing our pupils with an excellent education.  Our philosophy is simple: children need a happy school atmosphere, small class sizes and to have high expectations of themselves.</p>
             <p>
             Aims for our pupils:
             <ul>
@@ -160,13 +157,13 @@
             <h1> Admissions 2016 </h1>
 
             <ul>
-                <li><a href="/assets/Newentranceform.pdf"><img src="images/pdf-icon.png">  New Entrance Form.pdf </a></li>
+                <li><a href="/assets/Newentranceform.pdf" download=" New Entrance Form"><img src="images/pdf-icon.png">  New Entrance Form </a></li>
                 <br>
-                <li><a href="/assets/termdates2015-2016.pdf"><img src="images/pdf-icon.png">  Term Dates 2015-2016.pdf </a></li>
+                <li><a href="/assets/termdates2015-2016.pdf" download="Term Dates 2015-2016"><img src="images/pdf-icon.png">  Term Dates 2015-2016 </a></li>
                 <br>
-                <li><a href="/assets/Fees2016prospectus.pdf"><img src="images/pdf-icon.png">  Fees 2016 Prospectus.pdf </a></li>
+                <li><a href="/assets/Fees2016prospectus.pdf" download="Fees 2016 Prospectus"><img src="images/pdf-icon.png">  Fees 2016 Prospectus </a></li>
                 <br>
-                <li><a href="/assets/uniform.pdf"><img src="images/pdf-icon.png">  Uniform.pdf </a></li>
+                <li><a href="/assets/uniform.pdf" download="Uniform"><img src="images/pdf-icon.png">  Uniform </a></li>
                 <br>
             </ul>
         </div>
@@ -189,13 +186,24 @@ We look forward to hearing from you if you think you might be interested.  Pleas
 
         </div>  <!--- End of content -->
 
-        <div class="col-md-2"></div> <!--- Empty side div -->
-
        <!---------------------------------------------------------->
 
    </div> <!--- End of about-row1 ---->
-</div>
 
+
+</div><!--- End of inner-wrapper---->
+
+
+    <!------------------------------------------------------------->
+    <!----Footer--->
+    <div id="footer" class="row">
+        <div class="col-md-12 footer_resize">
+            <p class="lf">&copy; Copyright <a href="#">Nairobi Garage School</a></p>
+        <div style="clear:both;"></div>
+        </div>
+    </div>
+
+</div><!--- End of outer-wrapper ---->
 
 <!----------------------------------------------------------------------------->
     <!----scripts------>
