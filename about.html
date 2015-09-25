@@ -16,75 +16,163 @@
 <!-------------------------------------------------------------------------------->
 
 <body>
-<!------- ABOUT/ SUPPORT PAGE ------->
-<div class="wrapper">
-    <!---- Background image added ---->
-    <div id="about" class="col-md-12 container-fluid">
+<!------- ABOUT PAGE ------->
+<!------------------------------------------------------------->
+    <div id="wrapper" class="container">
 
-         <!---- Header section ---->
-        <div id="about-header" class="row">
+        <!---- Header section ---->
+        <div id="top-header" class="row">
+                <!------------------------------>
+                <!--- logo to the left--->
+                <div id="logo" class="col-md-6">
+                    <img class="img-responsive  centered" src="images/nrb_logo.jpg" alt="logo">
+                   <!-- <div><h3> tagline </h3></div>-->
+                </div>
+                <!--- End of logo --->
 
-            <!--- Page Title - middle--->
-            <div class="col-md-3 r-nav"></div>
+                <!------------------------------>
+                    <!--- nav bar 2--->
+                <!--defining my header-->
+                <div class="header_resize">
+                    <div class="menu_nav">
+                        <ul>
+                          <li><a href="index.html"><span>Home</span></a></li>
+                          <li class="active"><a href="about.html"><span>About Us</span></a></li>
+                          <li><a href="services.html"><span>Services and Facilities</span></a></li>
+                          <li><a href="contact.html"><span>Contact Us</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!--- End of Header ---->
+<!---------------------------------------------------------->
+<!-- PAGE 2: ABOUT ---->
 
-            <div class="col-md-5">
-                <h1> ABOUT US </h1>
-            </div>
+<!---- Row1 ---->
+    <div id="about-row1" class="row" style="display:none">
 
-            <!--- logo to the right--->
-            <div id="logo-sm" class="col-md-4">
-                <img class="img-responsive" src="images/nrb_logo.jpg" alt="logo">
+        <!-------------------------->
+
+        <div class="col-md-2"></div> <!--- Empty side div -->
+
+        <!-------------------------->
+        <!--- nav bar to the left--->
+        <div class="col-md-3 r-nav">
+
+            <div id="right-nav" class="col-md-3">
+                <ul>
+                    <li><a class="toggleButton" data-target="welcome">About</a>
+                        <ul>
+                            <li><a class="toggleButton" data-target="values">Visions and Values</a></li>
+                            <li><a class="toggleButton" data-target="staff">Who's Who</a></li>
+                            <li><a class="toggleButton" data-target="admissions">Admissions</a></li>
+                            <li><a class="toggleButton" data-target="jobs">Job Opportunities</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
         </div>
+        <!----------------------------------------->
+        <!--- content--->
+        <div id="content" class="col-md-5">
 
-<!---- Row1 ---->
-        <div id="about-row1" class="row">
+            <!--- Welcome Tab ---->
 
-            <!--- nav bar to the left--->
-            <div class="col-md-3 r-nav">
+            <div id="welcome" class="toggleDiv">
+                <h1> Welcome! </h1>
+                <h3> Brief Summary </h3>
 
-                <div id="right-nav" class="col-md-6">
-                    <ul class="nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li>
-                            <a href="support.html">About</a>
-                            <br><li><button class="toggleButton" data-target="welcome">Welcome</button></li> <br>
-                            <li><button class="toggleButton" data-target="jobs">Job Opportunities</button></li> <br>
+                <p>
+                    We are a busy primary school, located along Ngong Road, Nairobi Kenya.
 
-                        </li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-                </div>
+                    Nairobi Garage School is a special and happy place, where children are given the very best opportunities to learn for life, to grow together and to achieve their full potential. <br><br>
 
+                    We aim for excellence in achievement and personal development by having a stimulating curriculum, which closely matches the needs of our children and encourages them to be confident, motivated and enthusiastic learners.   We believe that learning should be fun, that children should have a childhood enriched by the highest standard of education and that their school days should provide happy memories to last a lifetime. <br><br>
+
+                    The school, which dates from 1997, is situated on a five-acre site, which includes woodland areas, ponds, a school field, garden and play areas.  Outdoor learning is a key part of our work – read about Let's GLOW! to find out more. <br><br>
+
+                    We hope that this website captures the ethos of our school.   You are also very welcome to visit us, which is the best way to find out more, to see the school in action and to let us answer any questions you may have.<br><br>
+
+                    We look forward to meeting you.<br><br><br>
+
+                    <b>Nelson Kimaiga • Head Teacher</b>
+                </p>
             </div>
 
-            <!--- content--->
-            <div id="content" class="col-md-9">
+    <!----------------------------------------->
+        <!--- Visions and Values--->
+        <div id="values" class="toggleDiv" style="display:none">
+            <h1> Visions and Values </h1>
+            <p> Our vision and values are at the core of everything we do. They underpin our teaching and learning, and provide an environment which prepares our pupils as confident, happy citizens.</p>
+            <p>After many years in the teaching profession, I have come to believe that there is a very simple, yet highly effective formula to providing our pupils with an excellent education.  Our philosophy is simple: children need a happy school atmosphere, small class sizes and to have high expectations of themselves.</p>
+            <p>
+            Aims for our pupils:
+            <ul>
+                <li>To become highly motivated lifelong learners</li>
+                <li>To develop enquiring minds and a spirit of curiosity</li>
+                <li>To respect themselves, others and the environment</li>
+                <li>To achieve their full potential</li>
+                <li>To be self-disciplined and work independently and collaboratively</li>
+                <li>To be flexible and adaptable for the world in which they live</li>
+            </ul>
+            </p>
 
+        </div>
 
+    <!----------------------------------------->
+        <!--- Who's Who--->
+        <div id="staff" class="toggleDiv" style="display:none">
+            <h1> Who's Who </h1>
 
-                <div id="welcome" class="toggleDiv">
-                    <h1> Welcome! </h1>
-                    <p>
+            <p> Staff at Nairobi Garage School 2015 </p>
 
-We are a busy primary school, located along Ngong Road, Nairobi Kenya.
+            <p>
+                <pre>
+                Mr. Nelson Kimaiga          Head Teacher
+                Mrs. Susan Wangeci          English/Phonics/Nursery
+                Miss Clara Mwanje           Nursery/EYFS Teacher
+                Miss Edith Njuguna          STD 1 History/Geography Co-ordinator
+                Miss Edith Njugun           STD 2 IT Co-ordinator
+                Mrs. Amy Atieno             STD 3 Assessment/English Co-ordinator
+                Mrs. Hayley Dixon           STD 3 School Council
+                Miss Licy Kimotho           STD 4 - 8 Music/Art/Science
+                Mrs. Hannah Cleasby         STD 5 Maths
+                Mr. Iam Munene              STD 6 - 8 PE Co-ordinator
 
-Nairobi Garage School is a special and happy place, where children are given the very best opportunities to learn for life, to grow together and to achieve their full potential. <br><br>
+                Miss Jade Poyner            Apprentice Nursery/EYFS
+                Mrs. Julie Andrews          STA Nursery/EYFS/Year 2
+                Miss Ellen Subira           TA STD 1 - 2
+                Miss Jess Rogerson          TA STD 3 - 4
 
-We aim for excellence in achievement and personal development by having a stimulating curriculum, which closely matches the needs of our children and encourages them to be confident, motivated and enthusiastic learners.   We believe that learning should be fun, that children should have a childhood enriched by the highest standard of education and that their school days should provide happy memories to last a lifetime. <br><br>
+                Mr. Cornellius Ngondo       Bursar
+                Mr. Geoff Kuria             Site Manager
+                Mrs. Sandy Okoth            Cook
+                Mrs. Lilian Mwende          Kitchen staff
+                </pre>
+            </p>
+      </div>
 
-The school, which dates from 1997, is situated on a five-acre site, which includes woodland areas, ponds, a school field, garden and play areas.  Outdoor learning is a key part of our work – read about Let's GLOW! to find out more. <br><br>
+<!----------------------------------------->
+        <!--- Addmissions--->
 
-We hope that this website captures the ethos of our school.   You are also very welcome to visit us, which is the best way to find out more, to see the school in action and to let us answer any questions you may have.<br><br>
+        <div id="admissions" class="toggleDiv" style="display:none">
+            <h1> Admissions 2016 </h1>
 
-We look forward to meeting you.<br><br><br>
+            <ul>
+                <li><a href="/assets/Newentranceform.pdf"><img src="images/pdf-icon.png">  New Entrance Form.pdf </a></li>
+                <br>
+                <li><a href="/assets/termdates2015-2016.pdf"><img src="images/pdf-icon.png">  Term Dates 2015-2016.pdf </a></li>
+                <br>
+                <li><a href="/assets/Fees2016prospectus.pdf"><img src="images/pdf-icon.png">  Fees 2016 Prospectus.pdf </a></li>
+                <br>
+                <li><a href="/assets/uniform.pdf"><img src="images/pdf-icon.png">  Uniform.pdf </a></li>
+                <br>
+            </ul>
+        </div>
 
-Nelson Kimaiga • Head Teacher
-
-                </p>
-                </div>
+    <!----------------------------------------->
+            <!--- Jobs Tab ---->
 
             <div id="jobs" class="toggleDiv" style="display:none">
                 <h1> Job Opportunities </h1>
@@ -97,13 +185,17 @@ We look forward to hearing from you if you think you might be interested.  Pleas
 
             </div>
 
+        <!----------------------------------------->
 
-        <!---- Row2 ---->
-        <!---- Row3 ---->
+        </div>  <!--- End of content -->
 
-        </div>
-    </div>
+        <div class="col-md-2"></div> <!--- Empty side div -->
+
+       <!---------------------------------------------------------->
+
+   </div> <!--- End of about-row1 ---->
 </div>
+
 
 <!----------------------------------------------------------------------------->
     <!----scripts------>
