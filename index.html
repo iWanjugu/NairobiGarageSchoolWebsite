@@ -5,6 +5,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!--bootstrap -->
 		<link rel="stylesheet" href="styles/body_style.css">
 
+         <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
         <!-- for mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="js/date.js"></script>
@@ -16,39 +22,22 @@
 <body>
 
 <!------- PAGE 1: HOME PAGE ------->
-<div id="container" class="wrapper row">
-
-    <!---- Background image added ---->
-    <div id="bgimage" class="col-md-12 container-fluid">
-
+<div id="outer-wrapper-home" class="col-md-12 container-fluid">
 <!------------------------------------------------------------->
         <!---- Header section ---->
-        <div id="top-header" class="row">
+        <div id="home-header" class="row">
+
                 <!------------------------------>
                 <!--- logo to the left--->
                 <div id="logo" class="col-md-6">
-                    <img class="img-responsive  centered" src="images/nrb_logo.jpg" alt="logo">
-                   <!-- <div><h3> tagline </h3></div>-->
+                    <img class="img-responsive" src="images/nrb_logo.jpg" alt="logo">
                 </div>
                 <!--- End of logo --->
 
                 <!------------------------------>
-                <!--- nav bar 1--->
-                   <!-- <nav id="primary_nav_wrap" class="col-md-6">
-                        <ul>
-                            <li><a class="current-menu-item toggleButton" data-target="main-body">Home</a></li>
-
-                            <li><a class="toggleButton" data-target="about-row1">About</a></li>
-
-                            <li><a href="services.html">Services</a></li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                    </nav>-->
-                    <!---End of Nav Bar --->
-
                     <!--- nav bar 2--->
                 <!--defining my header-->
-                <div class="header_resize">
+                <div class="header_resize col-md-6">
                     <div class="menu_nav">
                         <ul>
                           <li class="active"><a href="index.html"><span>Home</span></a></li>
@@ -57,228 +46,67 @@
                           <li><a href="contact.html"><span>Contact Us</span></a></li>
                         </ul>
                     </div>
-
                 </div>
+
+            </div>
+
         <!--- End of Header ---->
 
-<!------------------------------------------------------------->
-    <!--- Main Body Section - Home Page ---->
-   <div class="row">
-   <div id="all-content" class="col-md-12 container-fluid">
-        <div id="main-body" class="toggleDiv">
+        <!--- Main Body Section - Home Page ---->
+        <!---------------------------------------------------------->
+        <div id="inner-wrapper-home" class="container-fluid">
 
-            <!--Top row --->
-            <div id="top-row" class="row">
-                <div id="left" class="col-md-1"></div><!--//empty sides-->
-                <div id="mid1" class="col-md-2"></div>
+        <!-- CONTENT ---->
 
-                <div id="mid2" class="col-md-6 fadein">
-                    <!--<img class="img-responsive" src="/images/image-slider1.jpg" alt="pic1">
-                    <img class="img-responsive" src="/images/image-slider2.jpg" alt="pic2">-->
-                </div>
+           <div id="main-body" class="col-md-12 container-fluid row">
 
-                <div id="mid3" class="col-md-2"></div>
-                <div id="right" class="col-md-1"></div><!--//empty sides-->
-            </div>
-            <!---End of top-row --->
+                    <!--Top row --->
+                    <div id="top-row-home" class="row">
 
-            <!--Bottom row --->
-            <div id="bottom-row" class="row">
-                <div id="left" class="col-md-1"></div><!--//empty sides-->
+                        <div id="mid2" class="col-md-12">
 
-                <div id="mid4" class="col-md-6">
-                <h2> WELCOME TO THE NAIROBI GARAGE SCHOOL</h2>
-                    <p>
-                    A very warm welcome to The Nairobi Garage School's website! <br> We hope that you will enjoy visiting our website and that it will provide you with a good insight into our school. The staff at our school are caring, experienced and committed to meeting the individual needs of every child, and to creating a happy, secure environment in which they learn for life, grow together and achieve their best.
-                    </p>
+                        </div>
 
-                </div>
-
-                <div id="mid5" class="col-md-4">
-                    <h2> NOTICEBOARD </h2>
-                    <div>
-                        <p id="date">
-                                <script language="JavaScript" type="text/javascript" > document.write(TODAY);
-                                </script>
-                        <p> No Notices Today </p>
                     </div>
+                    <!---End of top-row --->
 
-                </div>
+                    <!--Bottom row --->
+                    <div id="bottom-row-home" class="row">
 
-                <div id="right" class="col-md-1"></div> <!--//empty sides-->
+                        <div id="intro" class="col-md-8">
+                            <h2> WELCOME TO THE NAIROBI GARAGE SCHOOL</h2>
+                            <p>
+                            A very warm welcome to The Nairobi Garage School's website! <br> We hope that you will enjoy visiting our website and that it will provide you with a good insight into our school. The staff at our school are caring, experienced and committed to meeting the individual needs of every child, and to creating a happy, secure environment in which they learn for life, grow together and achieve their best.
+                            </p>
+                        </div>
 
-             </div>
-            <!---End of bottom-row --->
+                        <div id="news" class="col-md-4">
+                            <h2> NOTICEBOARD </h2>
+                            <div>
+                                <p id="date">
+                                        <script language="JavaScript" type="text/javascript" > document.write(TODAY);
+                                        </script>
+                                <p> No Notices Today </p>
+                            </div>
 
+                        </div>
+                     </div><!---End of bottom-row --->
 
-
-        </div>
-        <!---End of main-body section--->
- </div>
-</div>
+                </div><!---End of main-body section--->
+         </div><!---End of inner-wrapper-home section--->
 
 <!------------------------------------------------------------->
-    <!----Footer--->
-    <div id="footer" class="row">
-        <div class="col-md-12 footer_resize">
-            <p class="lf">&copy; Copyright <a href="#">Nairobi Garage School</a></p>
-        <div style="clear:both;"></div>
+        <!----Footer--->
+        <div id="footer" class="row">
+            <div class="col-md-12 footer_resize">
+                <p class="lf">&copy; Copyright <a href="#">Nairobi Garage School</a></p>
+                <div style="clear:both;"></div>
+            </div>
         </div>
-    </div>
-
 
 <!---------------------------------------------------------->
-<!-- PAGE 2: ABOUT ---->
 
-       <!---- Row1 ---->
-        <div id="about-row1" class="row" style="display:none">
-
-            <div class="col-md-2"></div>
-            <!--- nav bar to the left--->
-            <div class="col-md-3 r-nav">
-
-                <div id="right-nav" class="col-md-3">
-                    <ul>
-						<li><a class="toggleButton" data-target="welcome">About</a>
-                            <ul>
-                                <li><a class="toggleButton" data-target="values">Visions and Values</a></li>
-                                <li><a class="toggleButton" data-target="staff">Who's Who</a></li>
-                                <li><a class="toggleButton" data-target="admissions">Admissions</a></li>
-                                <li><a class="toggleButton" data-target="jobs">Job Opportunities</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        <!----------------------------------------->
-            <!--- content--->
-            <div id="content" class="col-md-5">
-
-                <!--- Welcome Tab ---->
-
-                <div id="welcome" class="toggleDiv">
-                    <h1> Welcome! </h1>
-                    <h3> Brief Summary </h3>
-
-                    <p>
-                        We are a busy primary school, located along Ngong Road, Nairobi Kenya.
-
-                        Nairobi Garage School is a special and happy place, where children are given the very best opportunities to learn for life, to grow together and to achieve their full potential. <br><br>
-
-                        We aim for excellence in achievement and personal development by having a stimulating curriculum, which closely matches the needs of our children and encourages them to be confident, motivated and enthusiastic learners.   We believe that learning should be fun, that children should have a childhood enriched by the highest standard of education and that their school days should provide happy memories to last a lifetime. <br><br>
-
-                        The school, which dates from 1997, is situated on a five-acre site, which includes woodland areas, ponds, a school field, garden and play areas.  Outdoor learning is a key part of our work – read about Let's GLOW! to find out more. <br><br>
-
-                        We hope that this website captures the ethos of our school.   You are also very welcome to visit us, which is the best way to find out more, to see the school in action and to let us answer any questions you may have.<br><br>
-
-                        We look forward to meeting you.<br><br><br>
-
-                        <b>Nelson Kimaiga • Head Teacher</b>
-                    </p>
-                </div>
-
-        <!----------------------------------------->
-            <!--- Visions and Values--->
-            <div id="values" class="toggleDiv" style="display:none">
-                <h1> Visions and Values </h1>
-                <p> Our vision and values are at the core of everything we do. They underpin our teaching and learning, and provide an environment which prepares our pupils as confident, happy citizens.</p>
-                <p>After many years in the teaching profession, I have come to believe that there is a very simple, yet highly effective formula to providing our pupils with an excellent education.  Our philosophy is simple: children need a happy school atmosphere, small class sizes and to have high expectations of themselves.</p>
-                <p>
-                Aims for our pupils:
-                <ul>
-                    <li>To become highly motivated lifelong learners</li>
-                    <li>To develop enquiring minds and a spirit of curiosity</li>
-                    <li>To respect themselves, others and the environment</li>
-                    <li>To achieve their full potential</li>
-                    <li>To be self-disciplined and work independently and collaboratively</li>
-                    <li>To be flexible and adaptable for the world in which they live</li>
-                </ul>
-                </p>
-
-            </div>
-
-        <!----------------------------------------->
-            <!--- Who's Who--->
-            <div id="staff" class="toggleDiv" style="display:none">
-                <h1> Who's Who </h1>
-
-                <p> Staff at Nairobi Garage School 2015 </p>
-
-                <p>
-                    <pre>
-                    Mr. Nelson Kimaiga          Head Teacher
-                    Mrs. Susan Wangeci          English/Phonics/Nursery
-                    Miss Clara Mwanje           Nursery/EYFS Teacher
-                    Miss Edith Njuguna          STD 1 History/Geography Co-ordinator
-                    Miss Edith Njugun           STD 2 IT Co-ordinator
-                    Mrs. Amy Atieno             STD 3 Assessment/English Co-ordinator
-                    Mrs. Hayley Dixon           STD 3 School Council
-                    Miss Licy Kimotho           STD 4 - 8 Music/Art/Science
-                    Mrs. Hannah Cleasby         STD 5 Maths
-                    Mr. Iam Munene              STD 6 - 8 PE Co-ordinator
-
-                    Miss Jade Poyner            Apprentice Nursery/EYFS
-                    Mrs. Julie Andrews          STA Nursery/EYFS/Year 2
-                    Miss Ellen Subira           TA STD 1 - 2
-                    Miss Jess Rogerson          TA STD 3 - 4
-
-                    Mr. Cornellius Ngondo       Bursar
-                    Mr. Geoff Kuria             Site Manager
-                    Mrs. Sandy Okoth            Cook
-                    Mrs. Lilian Mwende          Kitchen staff
-                    </pre>
-                </p>
-          </div>
-
-    <!----------------------------------------->
-            <!--- Addmissions--->
-
-            <div id="admissions" class="toggleDiv" style="display:none">
-                <h1> Admissions 2016 </h1>
-
-                <ul>
-                    <li><a href="/assets/Newentranceform.pdf"><img src="images/pdf-icon.png">  New Entrance Form.pdf </a></li>
-                    <br>
-                    <li><a href="/assets/termdates2015-2016.pdf"><img src="images/pdf-icon.png">  Term Dates 2015-2016.pdf </a></li>
-                    <br>
-                    <li><a href="/assets/Fees2016prospectus.pdf"><img src="images/pdf-icon.png">  Fees 2016 Prospectus.pdf </a></li>
-                    <br>
-                    <li><a href="/assets/uniform.pdf"><img src="images/pdf-icon.png">  Uniform.pdf </a></li>
-                    <br>
-                </ul>
-
-
-
-        <!----------------------------------------->
-                <!--- Jobs Tab ---->
-
-                <div id="jobs" class="toggleDiv" style="display:none">
-                    <h1> Job Opportunities </h1>
-                    <h3>Relief Midday Supervisors </h3>
-                    <p>
-    Are you looking for something to fill a spare hour in the middle of the day?  If so, have you thought of helping at lunchtime in a school? <br><br>
-    We are looking for people who enjoy working with children to act as Relief Midday Supervisors to provide cover either when one of our regular staff members is absent, or when we just need an extra pair of hands!<br>
-    We look forward to hearing from you if you think you might be interested.  Please contact Mrs Cooke in the school office for further details.
-                    </p>
-
-                </div>
-
-            </div>
-        <div class="col-md-2"></div>
-
-       <!---------------------------------------------------------->
-
-       </div>
-
- <!---------------------------------------------------------->
-
-    </div> <!---End of background image div-the whole thing --->
-
-</div><!---END OF HOME PAGE - Container/wrapper --->
-
-
-
+</div><!---End of Outer Wrapper --->
 
 <!---------------------------------------------------------->
     <!-- Scripts ---->
@@ -312,8 +140,22 @@
          target.show();
    });
 });
+</script>
 
-    </script>
+
+    <!-- Full Page Image Background Carousel Header -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+})
+</script>
 
 </body>
 
