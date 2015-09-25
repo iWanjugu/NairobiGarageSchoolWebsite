@@ -42,14 +42,14 @@ html, body {
     height: 1000px;
     width: 100%;
     /*background-image: url("../images/bg1.jpeg");*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #top-header {
     position: inherit;
     color: black;
     background-color: white;
-    height: 240px;
+    height: 172px;
     width: 100%;
     align-content: center;
 }
@@ -57,136 +57,57 @@ html, body {
 #logo {
     position: relative;
     height: 240px;
+    width: 43%;
+    background-color:
 }
 
 #logo img {
-    max-width:100%;
+    max-width:46%;
     position: absolute;
-    top: 3%;
-    left: 50%;
+    left: 10%;
     display: inline-block;
 }
 
 /******************************************/
-/* Nav Bar - Drop down Menu styling */
-#primary_nav_wrap
-{
-	margin-top: 5px
+/****Header 2 ***/
+.menu_nav {
+	margin: 110px 0px 0px 0px;
+	height: 50px;
+	float:right;
+    height: 100%
 }
-
-#primary_nav_wrap ul
-{
+.menu_nav ul {
 	list-style:none;
-	position:relative;
+	padding:0;
+	height:60px;
 	float:left;
+    margin-top: 9px;
+}
+.menu_nav ul li {
 	margin:0;
-	padding:0
+	padding:0 0 0 10px;
+	float:left;
 }
 
-#primary_nav_wrap ul a
-{
+.menu_nav ul li a {
 	display:block;
-    color: #424242;
-	text-decoration:none;
-	font-weight: 0;
-	font-size: 1.35em;
-    letter-spacing: .2px;
-	line-height: 50px;
-	padding: 0 15px;
-}
-
-#primary_nav_wrap ul li
-{
-	position:relative;
-	float:left;
 	margin:0;
-	padding:0;
-    margin: 0px;
-    width: 152px;
-    border-radius: 0px 7px 0px 7px;
+	padding:17px 24px;
+	font-size:15px;
+	line-height:16px;
+	font-weight:normal;
+	color:#9f9f9f;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+	background:#363636;
+        border-radius: 7px 7px 0px 0px;
     border: #e0e0e0 solid 2px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(224, 224, 224);
-    background-color: #fff;
 }
-
-#primary_nav_wrap ul li:hover {
-	background-color: #e0e0e0;
-}
-
-#primary_nav_wrap ul a:hover {
-    color: dimgray;
-}
-
-#primary_nav_wrap ul li.selected {
-	background: #59ABE3;
-    color: white;
-}
-
-#primary_nav_wrap ul a.selected
-{
-    color: white;
-}
-
-
-#primary_nav_wrap ul li.current-menu-item
-{
-	margin: 0px;
-    width: 152px;
-    border-radius: 0px 7px 0px 7px;
-    border: dimgray solid 1px;
-    border-color: rgb(224, 224, 224);
-    background-color: #59ABE3;
-
-}
-
-#primary_nav_wrap ul li.current-menu-item a{
-    color: white;
-    font-weight: 00;
-}
-
-#primary_nav_wrap ul li.current-menu-item a:hover {
-	background: #e0e0e0;
-    color: dimgray;
-}
-
-#primary_nav_wrap ul ul
-{
-	display:none; /*won't display on screen*/
-	position:absolute;
-	top: 100%; //
-	left:0;
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+	text-decoration:none;
+	color:#114044;
 	background:#fff;
-	padding:0;
-}
-
-#primary_nav_wrap ul ul li
-{
-	float:none;
-}
-
-#primary_nav_wrap ul ul a
-{
-	line-height:100%;
-	padding:10px 15px;
-}
-
-#primary_nav_wrap ul ul ul
-{
-	top:0;
-	left:100%;
-}
-
-#primary_nav_wrap ul ul ul a
-{
-    line-height:90%;
-	padding:10px 15px;
-}
-
-#primary_nav_wrap ul li:hover > ul
-{
-	display: block;
 }
 /******************************************/
 
@@ -283,7 +204,7 @@ p {
     height: 170px;
 
 }
-#about-header .r-nav { /*right navigation*/
+#about-header .r-nav { right navigation
     height: 100%;
 }
 
@@ -365,6 +286,7 @@ p {
     height: 800px;
     background-color: white;
     font-size: 1.1em;
+    padding: 0 100px 100px;
 }
 
 #content h1 {
@@ -379,4 +301,46 @@ p {
 #welcome, #jobs {
     width: 80%;
     margin-left: 10%;
+}
+
+
+
+/************************************************************/
+/***** Footer *******/
+#footer {
+	background:#363636;
+    text-align: center;
+    height: 70px;
+}
+#footer .footer_resize {
+	margin:0 auto;
+	padding:0 20px;
+	width:100%;
+
+	line-height:1.5em;
+	color:#fffffe;
+    text-align: center;
+    margin-right: -50%;
+}
+.footer_resize p {
+	margin:24px 0;
+	padding:0;
+	line-height:normal;
+	white-space:nowrap;
+	text-indent:inherit;
+    margin-right: 43%;
+    margin-left: 43%;
+
+}
+.footer_resize a {
+    margin:0;
+	padding:30%;
+	border:none;
+	text-decoration:underline;
+	background-color:transparent;
+}
+.footer_resize a:hover {
+	color:#28ecfa;
+	background-color:transparent;
+	text-decoration:none;
 }
